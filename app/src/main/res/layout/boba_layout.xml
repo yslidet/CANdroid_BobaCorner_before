@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Boba Sugar Rush"
+        android:textSize="40sp"
+        android:gravity="center"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <ImageView
+            android:id="@+id/img_boba"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bobamain"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sugar Level  "
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/btn_100"/>
+
+        <Button
+            android:id="@+id/btn_100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100%"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/btn_75"/>
+
+        <Button
+            android:id="@+id/btn_75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="75%"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/btn_50"/>
+
+        <Button
+            android:id="@+id/btn_50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50%"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/btn_25"/>
+
+
+        <Button
+            android:id="@+id/btn_25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25%"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/btn_0"
+            android:onClick="clickBtn25"/>
+
+        <TextView
+            android:id="@+id/btn_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reset"
+            android:textColor="#00CED1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@id/btn_25"
+            android:layout_alignLeft="@id/btn_50"
+            android:gravity="center"
+            android:onClick="clickBtn0"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txt_message"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="Choose Sugar Level"/>
+
+</LinearLayout>
